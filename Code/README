@@ -1,0 +1,24 @@
+For apriori_serial.cpp,
+3 arguments are required.
+1st argument - minimum support count
+2nd argument - no of transactions
+3rd argument - input filename
+
+For apriori_parallel.cpp,
+4 arguments are required.
+1st argument - minimum support count
+2nd argument - no of transactions
+3rd argument - number of threads
+4th argument - input filename
+
+transactionMaker.c is used to produce input transaction files.
+
+The shell scripts and python plotter scripts for speedup vs cores and speedup vs problem size are kept in respective folders.
+The output of the shell scripts are redirected to temporary text files. These text files serve as input to plotter script.
+
+apriori_parallel_optimised.c and apriori_serial_optimised.c are improved versions. The set_count() function has been optimised.
+
+Following short forms have been used - 
+trans - transaction
+sc - support count
+i - item
